@@ -1,0 +1,13 @@
+// Apply the groovy plugin to add support for Groovy
+apply plugin: 'groovy'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // We use the latest groovy 2.x version for building this library
+    compile 'org.codehaus.groovy:groovy-all:2.4.3'
+
+    testCompile 'junit:junit:4.12'
+}
